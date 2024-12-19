@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(){
 	
@@ -8,7 +10,7 @@ int main(){
 	srand (time(NULL));
 	
 	for(i=0; i<=5; i++){
-		vetor[i] = rand();
+		vetor[i] = 1 + rand() % 60;
 	}
 	for(i=0; i<=5; i++){
 		printf("\nVetor %d: ", i+1);
